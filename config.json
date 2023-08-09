@@ -1,0 +1,38 @@
+{
+  "curb": {
+    "width": 4,
+    "units": "meters"
+  },
+  "filesToDownload": [
+    {
+      "downloadUrl": "https://donnees.montreal.ca/dataset/88493b16-220f-4709-b57b-1ea57c5ba405/resource/16f7fa0a-9ce6-4b29-a7fc-00842c593927/download/gbdouble.json",
+      "sourceUrl": "https://donnees.montreal.ca/en/dataset/geobase-double",
+      "destinationPath": "./data/downloads/gbdouble.json"
+    },
+    {
+      "downloadUrl": "https://donnees.montreal.ca/dataset/8ac6dd33-b0d3-4eab-a334-5a6283eb7940/resource/52cecff0-2644-4258-a2d1-0c4b3b116117/download/signalisation_stationnement.geojson",
+      "sourceUrl": "https://donnees.montreal.ca/en/dataset/stationnement-sur-rue-signalisation-courant",
+      "destinationPath": "./data/downloads/signalisation_stationnement.geojson"
+    }
+  ],
+  "areas": [
+    {
+      "name": "plaza",
+      "geometryFilePath": "./data/geometries/plaza-saint-hubert.geojson"
+    }
+  ],
+  "curbLinesPaths": [
+    "./data/downloads/gbdouble.json"
+  ],
+  "policies": [
+    {
+      "type": "montreal",
+      "files": [
+        {
+          "name": "stationnement",
+          "path": "./data/downloads/signalisation_stationnement.geojson"
+        }
+      ]
+    }
+  ]
+}

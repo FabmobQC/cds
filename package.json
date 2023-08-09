@@ -1,0 +1,26 @@
+{
+  "name": "cds",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "tsc-watch --build --onSuccess \"node dist/index.js\"",
+    "lint": "eslint src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.8",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "eslint": "^8.46.0",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@turf/boolean-within": "^6.5.0",
+    "@turf/helpers": "^6.5.0",
+    "@turf/line-offset": "^6.5.0"
+  }
+}
